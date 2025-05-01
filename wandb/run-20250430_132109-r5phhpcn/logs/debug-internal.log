@@ -1,0 +1,15 @@
+{"time":"2025-04-30T13:21:09.8385301-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"C:\\Users\\chris\\EEG-DIF\\wandb\\run-20250430_132109-r5phhpcn\\logs\\debug-core.log"}
+{"time":"2025-04-30T13:21:10.0395239-04:00","level":"INFO","msg":"created new stream","id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:10.0402034-04:00","level":"INFO","msg":"stream: started","id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:10.0402034-04:00","level":"INFO","msg":"sender: started","stream_id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:10.0402034-04:00","level":"INFO","msg":"handler: started","stream_id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:10.0402034-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:10.2479938-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-30T13:21:28.5001144-04:00","level":"INFO","msg":"stream: closing","id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:28.5001144-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-30T13:21:28.5001144-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-30T13:21:28.8510059-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-30T13:21:29.0112463-04:00","level":"INFO","msg":"handler: closed","stream_id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:29.0112463-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:29.0112463-04:00","level":"INFO","msg":"sender: closed","stream_id":"r5phhpcn"}
+{"time":"2025-04-30T13:21:29.0117985-04:00","level":"INFO","msg":"stream: closed","id":"r5phhpcn"}

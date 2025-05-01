@@ -1,0 +1,38 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.9.21",
+  "startedAt": "2025-04-30T17:21:09.837222Z",
+  "program": "c:\\Users\\chris\\EEG-DIF\\train_eegdiff_1d.py",
+  "codePath": "train_eegdiff_1d.py",
+  "email": "zw2864@columbia.edu",
+  "root": "C:\\Users\\chris\\EEG-DIF",
+  "host": "Zanxu",
+  "executable": "C:\\Users\\chris\\anaconda3\\envs\\EEGDiff\\python.exe",
+  "codePathLocal": "train_eegdiff_1d.py",
+  "cpu_count": 24,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "2047143309312",
+      "used": "893947576320"
+    }
+  },
+  "memory": {
+    "total": "33980628992"
+  },
+  "cpu": {
+    "count": 24,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "memoryTotal": "17171480576",
+      "cudaCores": 9728,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.8"
+}

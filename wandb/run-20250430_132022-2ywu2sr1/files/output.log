@@ -1,0 +1,57 @@
+Starting training for 1D EEG diffusion model...
+Traceback (most recent call last):
+  File "c:\Users\chris\EEG-DIF\train_eegdiff_1d.py", line 32, in <module>
+    trainner.train()
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 365, in train
+    self.train_single_batch(batch, number_iteration)
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 335, in train_single_batch
+    noise_pred = self.unet(signals_with_noise, timesteps).sample
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d.py", line 246, in forward
+    sample = upsample_block(sample, res_hidden_states_tuple=res_samples, temb=timestep_embed)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d_blocks.py", line 554, in forward
+    hidden_states = attn(hidden_states)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d_blocks.py", line 349, in forward
+    query_states = self.transpose_for_scores(query_proj)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d_blocks.py", line 335, in transpose_for_scores
+    new_projection = projection.view(new_projection_shape).permute(0, 2, 1, 3)
+RuntimeError: shape '[16, 320, 0, -1]' is invalid for input of size 81920
+Traceback (most recent call last):
+  File "c:\Users\chris\EEG-DIF\train_eegdiff_1d.py", line 32, in <module>
+    trainner.train()
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 365, in train
+    self.train_single_batch(batch, number_iteration)
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 335, in train_single_batch
+    noise_pred = self.unet(signals_with_noise, timesteps).sample
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d.py", line 246, in forward
+    sample = upsample_block(sample, res_hidden_states_tuple=res_samples, temb=timestep_embed)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d_blocks.py", line 554, in forward
+    hidden_states = attn(hidden_states)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d_blocks.py", line 349, in forward
+    query_states = self.transpose_for_scores(query_proj)
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\diffusers\models\unets\unet_1d_blocks.py", line 335, in transpose_for_scores
+    new_projection = projection.view(new_projection_shape).permute(0, 2, 1, 3)
+RuntimeError: shape '[16, 320, 0, -1]' is invalid for input of size 81920

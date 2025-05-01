@@ -1,0 +1,126 @@
+Starting training for 1D EEG diffusion model...
+epoch: 0, iteration: 0, mse loss: 2.70631, lr: 4e-05
+epoch: 0, iteration: 1, mse loss: 3.38431, lr: 8e-05
+epoch: 0, iteration: 2, mse loss: 15.12873, lr: 0.00012
+epoch: 0, iteration: 3, mse loss: 3.2919, lr: 0.00016
+epoch: 0, iteration: 4, mse loss: 1.04975, lr: 0.0002
+epoch: 0, iteration: 5, mse loss: 2.22871, lr: 0.0002
+epoch: 0, iteration: 6, mse loss: 1.12704, lr: 0.0002
+epoch: 0, iteration: 7, mse loss: 1.2492, lr: 0.0002
+epoch: 0, iteration: 8, mse loss: 1.17396, lr: 0.0002
+epoch: 0, iteration: 9, mse loss: 0.96222, lr: 0.0002
+epoch: 0, iteration: 10, mse loss: 0.7196, lr: 0.0002
+epoch: 0, iteration: 11, mse loss: 1.20156, lr: 0.0002
+epoch: 0, iteration: 12, mse loss: 0.88673, lr: 0.0002
+epoch: 0, iteration: 13, mse loss: 0.94169, lr: 0.0002
+epoch: 0, iteration: 14, mse loss: 0.9212, lr: 0.0002
+epoch: 0, iteration: 15, mse loss: 0.76326, lr: 0.0002
+epoch: 0, iteration: 16, mse loss: 0.89254, lr: 0.0002
+epoch: 0, iteration: 17, mse loss: 0.92431, lr: 0.0002
+epoch: 0, iteration: 18, mse loss: 0.69694, lr: 0.0002
+epoch: 0, iteration: 19, mse loss: 0.66251, lr: 0.0002
+epoch: 0, iteration: 20, mse loss: 0.69438, lr: 0.0002
+epoch: 0, iteration: 21, mse loss: 0.86491, lr: 0.0002
+epoch: 0, iteration: 22, mse loss: 0.72334, lr: 0.0002
+epoch: 0, iteration: 23, mse loss: 0.88892, lr: 0.0002
+epoch: 0, iteration: 24, mse loss: 0.68165, lr: 0.0002
+epoch: 0, iteration: 25, mse loss: 0.59709, lr: 0.0002
+epoch: 0, iteration: 26, mse loss: 0.83638, lr: 0.0002
+epoch: 0, iteration: 27, mse loss: 0.62205, lr: 0.0002
+epoch: 0, iteration: 28, mse loss: 0.89572, lr: 0.0002
+epoch: 0, iteration: 29, mse loss: 0.79045, lr: 0.0002
+epoch: 0, iteration: 30, mse loss: 0.60717, lr: 0.0002
+epoch: 0, iteration: 31, mse loss: 0.6986, lr: 0.0002
+epoch: 0, iteration: 32, mse loss: 0.64741, lr: 0.0002
+epoch: 0, iteration: 33, mse loss: 0.64384, lr: 0.0002
+epoch: 0, iteration: 34, mse loss: 0.7454, lr: 0.0002
+epoch: 0, iteration: 35, mse loss: 0.59406, lr: 0.0002
+epoch: 0, iteration: 36, mse loss: 0.56016, lr: 0.0002
+epoch: 0, iteration: 37, mse loss: 0.64895, lr: 0.0002
+epoch: 0, iteration: 38, mse loss: 0.53187, lr: 0.0002
+epoch: 0, iteration: 39, mse loss: 0.55915, lr: 0.0002
+epoch: 0, iteration: 40, mse loss: 0.54974, lr: 0.0002
+epoch: 0, iteration: 41, mse loss: 0.58139, lr: 0.0002
+epoch: 0, iteration: 42, mse loss: 0.71505, lr: 0.0002
+epoch: 0, iteration: 43, mse loss: 0.51476, lr: 0.0002
+epoch: 0, iteration: 44, mse loss: 0.89483, lr: 0.0002
+epoch: 0, iteration: 45, mse loss: 0.63649, lr: 0.0002
+epoch: 0, iteration: 46, mse loss: 0.57275, lr: 0.0002
+epoch: 0, iteration: 47, mse loss: 0.64227, lr: 0.0002
+epoch: 0, iteration: 48, mse loss: 0.50739, lr: 0.0002
+epoch: 0, iteration: 49, mse loss: 0.52241, lr: 0.0002
+epoch: 0, iteration: 50, mse loss: 0.80294, lr: 0.0002
+epoch: 0, iteration: 51, mse loss: 0.72529, lr: 0.0002
+epoch: 0, iteration: 52, mse loss: 0.57645, lr: 0.0002
+epoch: 0, iteration: 53, mse loss: 0.57264, lr: 0.0002
+epoch: 0, iteration: 54, mse loss: 1.02863, lr: 0.0002
+epoch: 0, iteration: 55, mse loss: 0.57718, lr: 0.0002
+epoch: 0, iteration: 56, mse loss: 0.70351, lr: 0.0002
+epoch: 0, iteration: 57, mse loss: 0.79831, lr: 0.0002
+epoch: 0, iteration: 58, mse loss: 0.59738, lr: 0.0002
+epoch: 0, iteration: 59, mse loss: 0.64508, lr: 0.0002
+epoch: 0, iteration: 60, mse loss: 0.75557, lr: 0.0002
+epoch: 0, iteration: 61, mse loss: 0.64965, lr: 0.0002
+epoch: 0, iteration: 62, mse loss: 1.06907, lr: 0.0002
+epoch: 0, iteration: 63, mse loss: 0.77278, lr: 0.0002
+epoch: 0, iteration: 64, mse loss: 0.56768, lr: 0.0002
+epoch: 0, iteration: 65, mse loss: 0.57743, lr: 0.0002
+epoch: 0, iteration: 66, mse loss: 0.64821, lr: 0.0002
+epoch: 0, iteration: 67, mse loss: 0.56496, lr: 0.0002
+epoch: 0, iteration: 68, mse loss: 0.55938, lr: 0.0002
+epoch: 0, iteration: 69, mse loss: 0.51422, lr: 0.0002
+epoch: 0, iteration: 70, mse loss: 0.76388, lr: 0.0002
+epoch: 0, iteration: 71, mse loss: 0.59653, lr: 0.0002
+epoch: 0, iteration: 72, mse loss: 0.6104, lr: 0.0002
+epoch: 0, iteration: 73, mse loss: 0.57548, lr: 0.0002
+epoch: 0, iteration: 74, mse loss: 0.51666, lr: 0.0002
+epoch: 0, iteration: 75, mse loss: 0.61119, lr: 0.0002
+epoch: 0, iteration: 76, mse loss: 0.51777, lr: 0.0002
+epoch: 0, iteration: 77, mse loss: 0.4896, lr: 0.0002
+epoch: 1, iteration: 78, mse loss: 0.67091, lr: 0.0002
+epoch: 1, iteration: 79, mse loss: 0.86461, lr: 0.0002
+epoch: 1, iteration: 80, mse loss: 0.57381, lr: 0.0002
+epoch: 1, iteration: 81, mse loss: 0.52884, lr: 0.0002
+epoch: 1, iteration: 82, mse loss: 0.49967, lr: 0.0002
+epoch: 1, iteration: 83, mse loss: 0.76401, lr: 0.0002
+epoch: 1, iteration: 84, mse loss: 0.59081, lr: 0.0002
+epoch: 1, iteration: 85, mse loss: 0.62803, lr: 0.0002
+epoch: 1, iteration: 86, mse loss: 0.49762, lr: 0.0002
+epoch: 1, iteration: 87, mse loss: 0.59093, lr: 0.0002
+epoch: 1, iteration: 88, mse loss: 0.56169, lr: 0.0002
+epoch: 1, iteration: 89, mse loss: 0.59555, lr: 0.0002
+epoch: 1, iteration: 90, mse loss: 0.55533, lr: 0.0002
+epoch: 1, iteration: 91, mse loss: 0.66891, lr: 0.0002
+epoch: 1, iteration: 92, mse loss: 0.55568, lr: 0.0002
+epoch: 1, iteration: 93, mse loss: 0.50178, lr: 0.0002
+epoch: 1, iteration: 94, mse loss: 0.48717, lr: 0.0002
+epoch: 1, iteration: 95, mse loss: 0.47956, lr: 0.0002
+epoch: 1, iteration: 96, mse loss: 0.53224, lr: 0.0002
+Traceback (most recent call last):
+  File "c:\Users\chris\EEG-DIF\train_eegdiff_1d.py", line 32, in <module>
+    trainner.train()
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 365, in train
+    self.train_single_batch(batch, number_iteration)
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 344, in train_single_batch
+    loss.backward()
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\autograd\graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "c:\Users\chris\EEG-DIF\train_eegdiff_1d.py", line 32, in <module>
+    trainner.train()
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 365, in train
+    self.train_single_batch(batch, number_iteration)
+  File "c:\Users\chris\EEG-DIF\EEG\runner\trainer_1d.py", line 344, in train_single_batch
+    loss.backward()
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "C:\Users\chris\anaconda3\envs\EEGDiff\lib\site-packages\torch\autograd\graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

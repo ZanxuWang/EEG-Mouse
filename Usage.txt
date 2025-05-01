@@ -1,0 +1,1 @@
+python prepare_train_test.py --matfile "D:/EEG/Xiaofu/VPM/M711_het_CaMKII/EEGCamFP20210322-210323-100654/eeg3_m0-60_phot3dots.mat" --window-sec 10 --preictal-sec 5 --train-ratio 0.8
