@@ -29,7 +29,7 @@ class DDIMPipeline1D(DiffusionPipeline):
             batch_size: int = 1,
             generator: Optional[Union[torch.Generator, List[torch.Generator]]] = None,
             eta: float = 0.0,
-            num_inference_steps: int = 50,
+            num_inference_steps: int = 1000,
             use_clipped_model_output: Optional[bool] = None,
             return_dict: bool = True,
     ) -> Union[ImagePipelineOutput, Tuple]:
@@ -59,7 +59,10 @@ class DDIMPipeline1D(DiffusionPipeline):
                 f" size of {batch_size}. Make sure the batch size matches the length of the generators."
             )
 
-        signal = randn_tensor(signal_shape, generator=generator, device=self.device, dtype=self.unet.dtype)
+        # Update this part with scaled noise
+        noise_scale = 1  # Use same value as in training
+        signal = noise_scale * randn_tensor(signal_shape, generator=generator, 
+                                        device=self.device, dtype=self.unet.dtype)
         signal[:, :, :prediction_point] = initial_signal[:, :, :prediction_point]
 
         # Set step values
@@ -90,11 +93,11 @@ class DDIMPipeline1D(DiffusionPipeline):
     def do_prediction(
             self,
             initial_signal,
-            predict_begin_point: int,
+            prediction_point: int,
             batch_size: int = 1,
             generator: Optional[Union[torch.Generator, List[torch.Generator]]] = None,
             eta: float = 0.0,
-            num_inference_steps: int = 50,
+            num_inference_steps: int = 100,
             use_clipped_model_output: Optional[bool] = None,
     ) -> torch.FloatTensor:
         """
@@ -112,8 +115,17 @@ class DDIMPipeline1D(DiffusionPipeline):
         Returns:
             Predicted signal.
         """
-        # Clone the initial signal
-        signal = initial_signal.clone()
+        # # Clone the initial signal
+        # signal = initial_signal.clone()
+
+        # def do_prediction(self, initial_signal, predict_begin_point: int, ...):
+        # Instead of just cloning, start with random noise like in __call__
+
+
+        noise_scale = 1  # Use same value as in training
+        signal = noise_scale * randn_tensor(initial_signal.shape, generator=generator, 
+                                      device=self.device, dtype=self.unet.dtype)
+        signal[:, :, :prediction_point] = initial_signal[:, :, :prediction_point]
 
         # Set step values
         self.scheduler.set_timesteps(num_inference_steps)
@@ -126,6 +138,6 @@ class DDIMPipeline1D(DiffusionPipeline):
             signal = self.scheduler.step(
                 model_output, t, signal, eta=eta, use_clipped_model_output=use_clipped_model_output, generator=generator
             ).prev_sample
-            signal[:, :, :predict_begin_point] = initial_signal[:, :, :predict_begin_point]
+            signal[:, :, :prediction_point] = initial_signal[:, :, :prediction_point]
 
         return signal
