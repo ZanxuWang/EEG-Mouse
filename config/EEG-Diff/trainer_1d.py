@@ -13,16 +13,21 @@ train_config = dict(
     device=device,
     output_dir="C:/Users/chris/EEG-DIF/outputs/1d_model",
     u_net_weight_path=None,  # Set to path if you have pretrained weights
-    prediction_point=934,   # Start prediction from 50% of signal
-    num_train_timesteps=200,
-    num_epochs=20,
-    train_batch_size=16,     # Adjust based on your GPU memory
-    eval_batch_size=16,
-    learning_rate=0.00002,
-    lr_warmup_steps=5,
-    eval_begin=100,          # Start evaluation after this many iterations
-    eval_interval=200,       # Evaluate every 100 iterations
+    prediction_point=768,   # Start prediction from 50% of signal
+    num_train_timesteps=200, #number of steps in evaluation...
+    num_epochs=10,
+    train_batch_size=128,     # Adjust based on your GPU memory
+    eval_batch_size=512,
+    learning_rate=0.00001,
+    lr_warmup_steps=35,
+    eval_begin=10,          # Start evaluation after this many iterations
+    eval_interval=175,       # Evaluate every 20 iterations
+    
+    # Add paths to label files for seizure/non-seizure classification
+    train_labels_path="C:/Users/chris/EEG-DIF/data/train_labels.csv",
+    test_labels_path="C:/Users/chris/EEG-DIF/data/test_labels.csv",
 )
+
 
 project_name = "EEG-DIF-1D"
 
@@ -31,7 +36,7 @@ trainner = dict(
     trainner_config=train_config,
     unet=unet,
     noise_scheduler=noise_scheduler,
-    optimizer=dict(type="Adam", learning_rate=0.00002),  # Same as in train_config
+    optimizer=dict(type="Adam", learning_rate=0.00001),  # Same as in train_config
     train_dataset=train_dataset,
     val_dataset=val_dataset)
 
